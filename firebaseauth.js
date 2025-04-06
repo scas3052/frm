@@ -49,7 +49,7 @@ signUp.addEventListener('click', (event) => {
                 .then(() => {
                     setTimeout(() => {
                         sessionStorage.setItem('loggedInUserId', user.uid);
-                        window.location.href = './homepage.html';
+                        window.location.href = 'homepage.html';
                     }, 1000);
                 });
         })
@@ -80,7 +80,7 @@ signIn.addEventListener('click', (event) => {
             showMessage('Login successful', 'signInMessage', true);
             setTimeout(() => {
                 sessionStorage.setItem('loggedInUserId', user.uid);
-                window.location.href = './homepage.html';
+                window.location.href = 'homepage.html';
             }, 1000);
         })
         .catch((error) => {
@@ -167,7 +167,7 @@ async function handleGoogleAuth(messageDiv) {
             
             setTimeout(() => {
                 sessionStorage.setItem('loggedInUserId', user.uid);
-                window.location.href = './homepage.html';
+                window.location.href = 'homepage.html';
             }, 1000);
         }
     } catch (error) {

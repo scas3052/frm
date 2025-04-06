@@ -6,7 +6,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "firebase": "^11.6.0",
     "servor": "^4.0.2"
   },
   "devDependencies": {
