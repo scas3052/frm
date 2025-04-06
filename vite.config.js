@@ -8,10 +8,8 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       output: {
-        manualChunks: {
-          firebase: ['firebase/app', 'firebase/auth', 'firebase/firestore']
-        }
-      }
-    }
-  }
+        manualChunks: undefined, // Let Rollup handle chunking automatically
+      },
+    },
+  },
 });
